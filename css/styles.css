@@ -1,276 +1,205 @@
-.logomon {
-	width: 75px;
-}
+/**
+ * Базовые стили для всего сайта
+ */
+
+html {
+	background-color: #000;
+} 
 
 body {
-	font-family: 'Roboto', sans-serif;
+	position: relative;
+	font-family: "Mulish", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	line-height: 1.4;
 	color: #000;
-	background-color: #fff;
 	min-width: 320px;
-}
-
-nav {
-	display: inline;
-	text-align: center;
-}
-
-img {
-	
-	max-width: 100%;
+	overflow-x: hidden;
 	height: auto;
-
+	background-color: #000;
 }
 
-section {
-	padding: 50px 0;
-}
 
-a {
-	color: rgb(62, 204, 251);
-	text-decoration: none;
-}
-
-a:hover {
-	color: #555;
-}
-
-/* Header */
-
-.navbar-light .navbar-nav .nav-link {
-	color: #111;
-	font-weight: 500;
-	text-transform: uppercase;
-	
-}
-
-.nav-link {
-	margin-top: 23px;
-}
-
-.navbar-nav .dropdown-menu {
-	right: 0;
-	left: auto;
-}
-
-.navlogo {
-	padding-top: 0.3125rem;
-	padding-bottom: 0.3125rem;
-	font-size: 1.25rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.top-menu li a::after {
-	content: '';
-	display: block;
+/**
+ * Другие стили
+ */
+.navbar {
 	width: 100%;
-	background-color: #111;
-	height: 1px;
-	transition: all .3s;
-	transform: scale(0);
+	height: 80px;
+	background-color: #000;
 }
 
-.top-menu li a:hover::after {
-	transform: scale(1);
+.navbar .container {
+    height: inherit;
+	display: flex;
+	margin-left: 17%;
+	align-items: center;
 }
-/* Header */
 
-
-
-
-.textcoco {
-	padding-top: 117px;
-	margin-right: 500px;
-	margin-left: 500px;
-	justify-content: space-between;
-	text-align: justify;
-	
-	
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
 	
 }
 
-.textcoco h1 {
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 30px;
+.navbar-menu li {
+	display: inline-block;
 	
 }
 
-.textcoco h2 {
-	text-align: center;
-	font-size: 35px;
-}
-
-.textcoco p {
-	letter-spacing: 1px;
-	letter-spacing: 1px;
-	word-spacing: 5px;
-	font-size: 23px;
-	font-family: helvetica !important;
-}
-
-
-
-
-
-.textcocoV2 {
-	padding-top: 70px;
-	margin-right: 500px;
-	margin-left: 500px;
-	justify-content: space-between;
-	text-align: justify;
-	
+.navbar-menu li a {
+	display: inline-block;
+	color: aliceblue;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .2s ease-in-out;
+	/* font-family: "Mulish", sans-serif; */
 	
 	
 }
 
-.textcocoV2 h1 {
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 30px;
+.navbar-menu li a:hover {
+	color: #ff0000;
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-left: 100px;
+	padding-top: 0px;
+	font-weight: 100;
+	font-size: 21px;
+}
+
+.callback {
+	margin-left: 100px;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all .1s ease-in-out;
 	
 }
 
-.textcocoV2 h2 {
-	text-align: center;
-	font-size: 35px;
+.callback:hover {
+	color: rgb(255, 0, 0);
+	transform: scale(1.04);
 }
 
-.textcocoV2 p {
-	letter-spacing: 1px;
-	letter-spacing: 1px;
-	word-spacing: 5px;
-	font-size: 23px;
-	font-family: helvetica !important;
+.navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #ff0000;
 }
 
-.boldik {
-	font-weight: bold;
+.navbar-brand:hover {
+	color: aliceblue;
+	transition: all .1s ease-in-out;
 }
 
-.ramka {
-	border-style: solid;
-	margin-bottom: 20px;
-	margin-top: 15px;
+.logo {
+	padding-top: 10px;
+	width: 90px;
 }
 
-.hr-line {
-	margin: 25px 0;
-	padding: 0;
-	height: 0;
-	border: none;
-	border-top: 3px solid #000000;
+.hero {
+	background: url(https://s.iimg.su/s/29/CqHYWYZmvsQVoNDAA68Extaj8rbyklpyyWiY8v6c.jpg) no-repeat bottom left;
+	background-size: 100vw 100vh;
+	padding: 281px;
+	background-color: #000;
+  }
+
+.hero__button {
+	  display: block;
+	  max-width: 200px;
+	  margin-top: 50px;
+	  text-align: center;
+	  color: #fff;
+	  padding: 25px;
+	  background-color: red;
+	  border-radius: 10px;
+	  transition: transform .5s;
+	  text-decoration: none;
+  }
+
+.hero__title {
+	display: flex;
+	font-weight: 300;
+	font-size: 100px;
+	color: aliceblue;
 }
 
-h2 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.redboom {
-	border-radius: 25px;
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-.popa {
-	margin-bottom: 40px;
-}
-
-.lipoco {
-	
-	letter-spacing: 1px;
-	letter-spacing: 1px;
-	word-spacing: 5px;
-	font-size: 20px;
-	font-family: helvetica !important;
-}
-
-.liok {
-	margin-bottom: 30px;
-}
-
-.liak {
-	margin-bottom: 30px;
-}
-
-h3 {
-	margin-top: 70px;
-	margin-bottom: 15px;
+.hero__subtitle {
+	color: aliceblue;
 }
 
 h4 {
-	margin-top: 70px;
-	margin-bottom: 15px;
-}
-
-.eliza {
-	margin-top: 15px;
-	margin-bottom: 70px;
-	border-radius: 17px;
-}
-
-.ChatGPTone {
-	margin-top: 30px;
-	margin-bottom: 35px;
-}
-
-.footer {
-	
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 120px;
-	/* background: #dfdfdf; */
-	background-color: #000000;
-	color: #fff;
-}
-
-.konez {
-	margin-right: 500px;
-	margin-left: 500px;
-	justify-content: space-between;
-	text-align: center;
-}
-
-.hr-line {
-	margin: 25px 0;
-	padding: 0;
-	height: 0;
-	border: none;
-	border-top: 2px;
-	background-color: #000000;
-}
-
-
-
-
-
-
-
-
-
-/* КАРУСЕЛЬ */
-
-.my-carousel {
-	margin-top: 7px;
-	padding: 0;
-	padding-left: 50px;
-	padding-right: 50px;
-	border-radius: 55px;
-}
-
-.my-carousel .carousel-item {
 	display: flex;
-	max-height: 700px;
-	
+	justify-content: center;
+	margin-top: 170px;
+	margin-bottom: 50px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 50px;
 }
 
-.my-carousel .carousel-item img {
-	object-fit: cover;
-	border-radius: 55px;
+p {
+	margin-top: 20px;
+    font-size: 35px;
+    background-color: rgb(0, 0, 0);
+	color: #fff;
+   
 }
 
+.conteiner {
+   margin: 20px;
+   
+   display: inline-block;
+    
+}
+
+.outher {
+	margin-top: 80px;
+   margin-bottom: 100px;
+} 
+
+.main {
+text-align: center;
+}
+
+.conteiner>a>img {
+    max-width: 500px;
+}
+
+.conteiner>a>img:hover {
+    border: 5px solid #ffffff; /* Ширина, вид и цвет рамки */
+	transition: all .3s ease-in-out;
+}
+
+.onemoments {
+	background-color: #fff;
+}
+
+.mainh {
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+	font-size: 60px;
+}
+
+.tdmin>img {
+	max-width: 80px;
+}
+
+.tdnfo {
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.row {
+	display: flex;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-bottom: 70px;
+}
 
